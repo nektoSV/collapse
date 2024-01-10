@@ -1,0 +1,59 @@
+* {
+  border: 1px solid transparent;;
+}
+
+.container {
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.btn-collapse {
+  margin: 15px;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #0055ff;
+  border-radius: 5px;
+}
+
+.collapse-content {
+  padding: 15px;
+  border: 1px solid #b0b0b0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.btn-collapse:hover {
+  background-color: #003cb3;
+}
+
+.animation {
+  animation-name: collapse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes collapse {
+  0% {
+    max-height: 65px;
+  }
+  100% {
+    max-height: 165px;
+  }
+}
+
+.reversAnimation {
+  animation-name: reversCollapse;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes reversCollapse {
+  0% {
+    max-height: 165px;
+  }
+  100% {
+    max-height: 65px;
+  }
+}
